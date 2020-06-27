@@ -125,24 +125,20 @@ class TicTacToe
   end
   
   def play
-    i = 1
-    while i <= 3 do 
+    turn
+    turn
+    turn
+    while over? == false
       turn
-      i += 1
-    end
-    if over? == false
-      while over? == false
-        turn
-    
-        if over?
-          if won? != false
-            victor = winner
-            return puts "Congratulations, #{victor}"
-          elsif draw?
-            return puts "Cats Game!"
-          end
-          
+  
+      if over?
+        if won? != false
+          victor = winner
+          return puts "Congratulations, #{victor}"
+        elsif draw?
+          return puts "Cats Game!"
         end
+        
       end
     end
   end
