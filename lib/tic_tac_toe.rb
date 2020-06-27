@@ -138,7 +138,6 @@ class TicTacToe
         elsif draw?
           return puts "Cats Game!"
         end
-        
       end
     end
   end
