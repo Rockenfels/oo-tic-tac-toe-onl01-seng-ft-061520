@@ -138,6 +138,8 @@ class TicTacToe
           if won? != false
             victor = winner
             return puts "Congratulations, #{victor}"
+          elsif draw?
+            return puts "Cats Game!"
           end
           
         end
